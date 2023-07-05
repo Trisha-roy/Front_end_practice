@@ -1,0 +1,10 @@
+.blog{
+    background-color: aqua;
+    border: 1px solid rgba(27, 6, 2, 0.904);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width:25%;
+    box-shadow: 5px 10px;
+
+}
