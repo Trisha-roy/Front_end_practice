@@ -4,16 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        label{
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <h2>Please fill up the form</h2>
     <form >
-        <label for="name">Your name:
+        <label for="name">Your Name:
             <input type="text">
         </label>
         <label for="email">Your Email:
             <input type="email" name="email" id="" required>
         </label>
+        <fieldset>
+            <legend>Select one </legend>
+            <label for="fuchka">
+                <input type="radio" name="pitha" id="">Fuchka
+            </label>
+            <label for="chotpoti">
+                <input type="radio" name="pitha" id="">Chotpoti
+            </label>
+            <label for="ice-cream">
+                <input type="radio" name="pitha" id="">Ice-cream
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pick One</legend>
+            <label for="sutki">
+                <input type="checkbox" name="vorta" id="">Sutki
+            </label>
+            <label for="sorisa">
+                <input type="checkbox" name="vorta" id="">Sorisa
+            </label>
+            <label for="hidol">
+                <input type="checkbox" name="" id="">Hidol
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Special instruction</legend>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </fieldset>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit" name="" id="">
     </form>
 </body>
 </html>
