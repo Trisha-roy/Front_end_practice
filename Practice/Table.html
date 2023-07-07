@@ -8,59 +8,104 @@
     <style>
         table {
             border-collapse: collapse;
+            padding: auto;
         }
 
         td,
         th {
-            border: 2px solid black;
+            border: 2px solid black;padding: 10px;
+        }
+        nav>ul{
+            display: flex;
+        }
+        nav>ul>li{
+            list-style: none;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        nav>ul>li>a{
+            text-decoration: none;
+            color: black;
+            background-color: bisque;
+        }
+        nav>ul>li a:hover{
+            background-color: rgb(197, 198, 213);
+            color: rgb(21, 27, 32);
+            size: 10px;
+        }
+        .dropdown{
+            display: none;
+        }
+        nav ul li:hover .dropdown{
+            display: block;
         }
     </style>
 </head>
 
 <body>
-    <h2>HTML TABLE</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>No</th>
-                <th>Name</th>
-                <th>Founder</th>
-                <th>Salary</th>
-            </tr>
-        </thead>
-        <tbody>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Blog.html">Blog</a></li>
+                <li>
+                    <a href="Cover.html">Cover</a>
+                    <ul class="dropdown">
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Cover.html">Cover</a></li>
+                        <li><a href="form.html">Form</a></li>
+                        <li><a href="log-in-form.html">Login</a></li>
+                    </ul>
+                </li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="log-in-form.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>HTML TABLE</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Founder</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
 
-            <tr>
-                <td>1</td>
-                <td>Bill Gates</td>
-                <td>Founder of Microsoft</td>
-                <td>$1000</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Steve Jobs</td>
-                <td>Founder of Apple</td>
-                <td>$1900</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Larry Page</td>
-                <td>Founder of Google</td>
-                <td>$1300</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Mark Jukerbarg</td>
-                <td>Founder of Facebook</td>
-                <td>$1500</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr colspan="4">
-                <td>Total employee : 1400</td>
-            </tr>
-        </tfoot>
-    </table>
+                <tr>
+                    <td>1</td>
+                    <td>Bill Gates</td>
+                    <td>Founder of Microsoft</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Steve Jobs</td>
+                    <td>Founder of Apple</td>
+                    <td>$1900</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Larry Page</td>
+                    <td>Founder of Google</td>
+                    <td>$1300</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mark Jukerbarg</td>
+                    <td>Founder of Facebook</td>
+                    <td>$1500</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr >
+                    <td colspan="4">Total employee : 1400</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
 </body>
 
 </html>
